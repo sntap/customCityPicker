@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/citypicker.iml" filepath="$PROJECT_DIR$/citypicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/citypicker-master.iml" filepath="$PROJECT_DIR$/.idea/modules/citypicker-master.iml" group="citypicker-master" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/citypicker-master-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/citypicker-master-app.iml" group="citypicker-master/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib_citydata/citypicker-master-lib_citydata.iml" filepath="$PROJECT_DIR$/.idea/modules/lib_citydata/citypicker-master-lib_citydata.iml" group="citypicker-master/lib_citydata" />
+      <module fileurl="file://$PROJECT_DIR$/citypickerview/citypickerview.iml" filepath="$PROJECT_DIR$/citypickerview/citypickerview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_citydata/lib_citydata.iml" filepath="$PROJECT_DIR$/lib_citydata/lib_citydata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/citypickerview/liji.library.dev-citypickerview.iml" filepath="$PROJECT_DIR$/.idea/modules/citypickerview/liji.library.dev-citypickerview.iml" group="citypicker-master/citypickerview" />
+    </modules>
+  </component>
+</project>
