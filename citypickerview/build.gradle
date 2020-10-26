@@ -5,7 +5,7 @@ apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
 //你的library版本号
-version = "1.0.0"
+version = "5.2.2"
 
 
 android {
@@ -19,7 +19,7 @@ android {
         minSdkVersion 14
         targetSdkVersion 23
         versionCode 5
-        versionName "1.0.0"
+        versionName "5.2.2"
     }
     buildTypes {
         release {
@@ -64,13 +64,13 @@ dependencies {
 }
 
 //你的library的地址
-//def siteUrl = 'https://github.com/crazyandcoder/citypicker'
-//def gitUrl = 'https://github.com/crazyandcoder/citypicker.git'
-//def issueUrl = 'https://github.com/crazyandcoder/citypicker/issues'
+def siteUrl = 'https://github.com/crazyandcoder/citypicker'
+def gitUrl = 'https://github.com/crazyandcoder/citypicker.git'
+def issueUrl = 'https://github.com/crazyandcoder/citypicker/issues'
 
 //这个蛮重要的，你上传到jCenter后一些文件存放的路径，如果不写或者写错了的话
 //可以不会产生pom文件，后面上传到jCenter后会报错，这个问题我搞了一下午！
-group = "sntap.library"
+group = "liji.library.dev"
 install {
     repositories.mavenInstaller {
         // POM.xml文件内容
