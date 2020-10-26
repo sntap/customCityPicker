@@ -3,7 +3,7 @@ package com.ihidea.as.citypicker;
 import android.app.Application;
 import android.content.Context;
 
-import com.lljjcoder.style.citylist.utils.CityListLoader;
+import com.sntap.style.citylist.utils.CityListLoader;
 import com.squareup.leakcanary.LeakCanary;
 import com.squareup.leakcanary.RefWatcher;
 

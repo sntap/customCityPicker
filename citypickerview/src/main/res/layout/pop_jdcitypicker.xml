@@ -85,7 +85,7 @@
             android:layout_height="1dp"
             android:background="#e8e8e8" />
 
-        <com.lljjcoder.style.cityjd.MyListView
+        <com.sntap.style.cityjd.MyListView
             android:id="@+id/city_listview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

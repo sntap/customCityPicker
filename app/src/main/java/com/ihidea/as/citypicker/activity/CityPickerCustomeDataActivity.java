@@ -4,7 +4,6 @@ import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
@@ -12,11 +11,10 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.ihidea.as.citypicker.R;
-import com.lljjcoder.Interface.OnCustomCityPickerItemClickListener;
-import com.lljjcoder.bean.CustomCityData;
-import com.lljjcoder.citywheel.CityConfig;
-import com.lljjcoder.citywheel.CustomConfig;
-import com.lljjcoder.style.citycustome.CustomCityPicker;
+import com.sntap.Interface.OnCustomCityPickerItemClickListener;
+import com.sntap.bean.CustomCityData;
+import com.sntap.citywheel.CustomConfig;
+import com.sntap.style.citycustome.CustomCityPicker;
 
 import java.util.ArrayList;
 import java.util.List;

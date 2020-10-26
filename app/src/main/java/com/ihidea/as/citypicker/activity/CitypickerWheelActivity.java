@@ -2,7 +2,6 @@ package com.ihidea.as.citypicker.activity;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.os.Process;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CheckBox;
@@ -11,17 +10,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.ihidea.as.citypicker.R;
-import com.lljjcoder.Interface.OnCityItemClickListener;
-import com.lljjcoder.bean.CityBean;
-import com.lljjcoder.bean.CustomCityData;
-import com.lljjcoder.bean.DistrictBean;
-import com.lljjcoder.bean.ProvinceBean;
-import com.lljjcoder.citywheel.CityConfig;
-import com.lljjcoder.style.citypickerview.CityPickerView;
-import com.lljjcoder.style.citylist.Toast.ToastUtils;
-
-import java.util.ArrayList;
-import java.util.List;
+import com.sntap.Interface.OnCityItemClickListener;
+import com.sntap.bean.CityBean;
+import com.sntap.bean.DistrictBean;
+import com.sntap.bean.ProvinceBean;
+import com.sntap.citywheel.CityConfig;
+import com.sntap.style.citypickerview.CityPickerView;
+import com.sntap.style.citylist.Toast.ToastUtils;
 
 public class CitypickerWheelActivity extends AppCompatActivity {
 

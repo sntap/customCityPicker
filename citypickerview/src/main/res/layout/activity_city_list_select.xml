@@ -39,7 +39,7 @@
         android:focusableInTouchMode="true"
         android:padding="5dp">
 
-        <com.lljjcoder.style.citylist.widget.CleanableEditView
+        <com.sntap.style.citylist.widget.CleanableEditView
             android:id="@+id/cityInputText"
             android:layout_width="match_parent"
             android:layout_height="40dp"
@@ -162,7 +162,7 @@
             android:textSize="20sp"
             android:visibility="gone"/>
 
-        <com.lljjcoder.style.citylist.sortlistview.SideBar
+        <com.sntap.style.citylist.sortlistview.SideBar
             android:id="@+id/sidrbar"
             android:layout_width="30.0dip"
             android:layout_height="fill_parent"

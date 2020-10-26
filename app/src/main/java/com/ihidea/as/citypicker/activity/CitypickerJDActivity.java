@@ -8,12 +8,12 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.ihidea.as.citypicker.R;
-import com.lljjcoder.Interface.OnCityItemClickListener;
-import com.lljjcoder.bean.CityBean;
-import com.lljjcoder.bean.DistrictBean;
-import com.lljjcoder.bean.ProvinceBean;
-import com.lljjcoder.style.cityjd.JDCityConfig;
-import com.lljjcoder.style.cityjd.JDCityPicker;
+import com.sntap.Interface.OnCityItemClickListener;
+import com.sntap.bean.CityBean;
+import com.sntap.bean.DistrictBean;
+import com.sntap.bean.ProvinceBean;
+import com.sntap.style.cityjd.JDCityConfig;
+import com.sntap.style.cityjd.JDCityPicker;
 
 import java.util.ArrayList;
 import java.util.List;
