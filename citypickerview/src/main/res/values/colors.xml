@@ -26,4 +26,9 @@
     <color name="liji_material_blue_700">#0288d1</color>
     <color name="liji_material_red_500">#e51c23</color>
     <color name="liji_material_red_700">#d01716</color>
+
+    <color name="title">#454545</color>
+
+    <color name="line">#F1F1F1</color>
+    <color name="line_color">#CCCCCC</color>
 </resources>

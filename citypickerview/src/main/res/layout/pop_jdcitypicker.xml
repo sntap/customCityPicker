@@ -16,22 +16,23 @@
             android:background="@color/white">
 
             <TextView
+                android:id="@+id/mTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:text="请选择"
-                android:textColor="@color/color_text_03"
-                android:textSize="14sp" />
+                android:text="请选择地区"
+                android:textColor="@color/title"
+                android:textSize="18sp" />
 
 
             <ImageView
                 android:id="@+id/close_img"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
+                android:layout_width="23dp"
+                android:layout_height="18dp"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:layout_marginRight="15dp"
-                android:background="@drawable/ic_close" />
+                android:background="@drawable/delete_dark" />
 
             <View
                 android:layout_width="match_parent"
@@ -45,27 +46,27 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="41dp"
+            android:layout_height="45dp"
             android:background="@color/white">
 
             <LinearLayout
                 android:id="@+id/choose_tab"
 
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="43dp"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/province_tv"
+                    android:id="@+id/tvProvince"
                     style="@style/tab"
                     android:text="请选择" />
 
                 <TextView
-                    android:id="@+id/city_tv"
+                    android:id="@+id/tvCity"
                     style="@style/tab" />
 
                 <TextView
-                    android:id="@+id/area_tv"
+                    android:id="@+id/tvArea"
                     style="@style/tab" />
 
             </LinearLayout>

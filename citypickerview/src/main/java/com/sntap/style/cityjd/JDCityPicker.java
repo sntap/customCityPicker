@@ -53,6 +53,7 @@ public class JDCityPicker {
 
     private TextView mAreaTv;
     private ImageView mCloseImg;
+    private TextView mTitle;
 
     private PopupWindow popwindow;
     private View mSelectedLine;
@@ -76,6 +77,11 @@ public class JDCityPicker {
 
     private JDCityConfig cityConfig = null;
 
+    private String provinceName = "";
+    private String cityName = "";
+    private String areaName = "";
+    private String title = "";
+
     public void setProvinceList(List<ProvinceBean> provinceList){
         this.provinceList = provinceList;
         try {
@@ -84,6 +90,22 @@ public class JDCityPicker {
         catch (Exception e){
             e.printStackTrace();
         }
+    }
+
+    public void setSelectTitle(String value){
+        this.title = value ;
+    }
+
+    public void setDefaultCityName(String value){
+        this.cityName = value ;
+    }
+
+    public void setDefaultProvinceName(String value){
+        this.provinceName = value;
+    }
+
+    public void setDefaultDistrictName(String value){
+        this.areaName = value;
     }
 
     public void setOnCityItemClickListener(OnCityItemClickListener listener) {
@@ -118,10 +140,24 @@ public class JDCityPicker {
         LayoutInflater layoutInflater = LayoutInflater.from(context);
         popview = layoutInflater.inflate(R.layout.pop_jdcitypicker, null);
 
+        mTitle = (TextView) popview.findViewById(R.id.mTitle);
+
+        if(!title.equals("")){
+            mTitle.setText(title);
+        }
         mCityListView = (ListView) popview.findViewById(R.id.city_listview);
-        mProTv = (TextView) popview.findViewById(R.id.province_tv);
-        mCityTv = (TextView) popview.findViewById(R.id.city_tv);
-        mAreaTv = (TextView) popview.findViewById(R.id.area_tv);
+        mProTv = (TextView) popview.findViewById(R.id.tvProvince);
+        if(!provinceName.equals("")){
+            mProTv.setText(provinceName);
+        }
+        mCityTv = (TextView) popview.findViewById(R.id.tvCity);
+        if(!cityName.equals("")){
+            mCityTv.setText(cityName);
+        }
+        mAreaTv = (TextView) popview.findViewById(R.id.tvArea);
+        if(!areaName.equals("")){
+            mAreaTv.setText(areaName);
+        }
         mCloseImg = (ImageView) popview.findViewById(R.id.close_img);
         mSelectedLine = (View) popview.findViewById(R.id.selected_line);
 
@@ -214,7 +250,7 @@ public class JDCityPicker {
                 ProvinceBean provinceBean = mProvinceAdapter.getItem(position);
                 if (provinceBean != null) {
                     mProTv.setText("" + provinceBean.getName());
-                    mCityTv.setText("请选择");
+                    mCityTv.setText(cityName);
                     mProvinceAdapter.updateSelectedPosition(position);
                     mProvinceAdapter.notifyDataSetChanged();
                     mCityAdapter = new CityAdapter(context, provinceBean.getCityList());
@@ -230,7 +266,7 @@ public class JDCityPicker {
                 CityBean cityBean = mCityAdapter.getItem(position);
                 if (cityBean != null) {
                     mCityTv.setText("" + cityBean.getName());
-                    mAreaTv.setText("请选择");
+                    mAreaTv.setText(areaName);
                     mCityAdapter.updateSelectedPosition(position);
                     mCityAdapter.notifyDataSetChanged();
                     if (this.cityConfig != null && this.cityConfig.getShowType() == JDCityConfig.ShowType.PRO_CITY) {

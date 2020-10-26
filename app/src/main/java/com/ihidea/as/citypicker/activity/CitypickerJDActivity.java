@@ -84,8 +84,6 @@ public class CitypickerJDActivity extends AppCompatActivity {
         provinceBeanList.add(bean1);
 
 
-
-
         ProvinceBean bean2 = new ProvinceBean();
         bean2.setId("2001");
         bean2.setName("上海");
@@ -101,6 +99,15 @@ public class CitypickerJDActivity extends AppCompatActivity {
         provinceBeanList.add(bean2);
 
         cityPicker.setProvinceList(provinceBeanList);
+
+        try {
+            cityPicker.setDefaultProvinceName("provinceName");
+            cityPicker.setDefaultCityName("cityName");
+            cityPicker.setSelectTitle("选择地区1232131231");
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
         cityPicker.setOnCityItemClickListener(new OnCityItemClickListener() {
             @Override
             public void onSelected(ProvinceBean province, CityBean city, DistrictBean district) {
