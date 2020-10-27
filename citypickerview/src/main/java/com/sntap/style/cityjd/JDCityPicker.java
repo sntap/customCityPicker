@@ -36,13 +36,6 @@ import static com.sntap.style.cityjd.JDConst.INDEX_TAB_AREA;
 import static com.sntap.style.cityjd.JDConst.INDEX_TAB_CITY;
 import static com.sntap.style.cityjd.JDConst.INDEX_TAB_PROVINCE;
 
-/**
- * 仿京东城市选择器
- * 作者：liji on 2018/1/26 16:08
- * 邮箱：lijiwork@sina.com
- * QQ ：275137657
- */
-
 public class JDCityPicker {
 
     private ListView mCityListView;
@@ -71,7 +64,7 @@ public class JDCityPicker {
     private int tabIndex = INDEX_TAB_PROVINCE;
     private Context context;
     private String colorSelected = "#ff181c20";
-    private String colorAlert = "#ffff4444";
+    private String colorAlert = "#fff9b62b";
 
     private OnCityItemClickListener mBaseListener;
 

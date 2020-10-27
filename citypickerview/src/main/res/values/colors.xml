@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#ff40c2fc</color>
+<!--    <color name="colorPrimary">#ff40c2fc</color>-->
     <color name="colorPrimaryDark">#ff08a7ee</color>
     <color name="colorAccent">#ff75d1fa</color>
     <color name="activity_bg">#ffe7e7e7</color>
@@ -31,4 +31,5 @@
 
     <color name="line">#F1F1F1</color>
     <color name="line_color">#CCCCCC</color>
+    <color name="color_yellow">#f9b62b</color>
 </resources>
