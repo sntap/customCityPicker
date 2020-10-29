@@ -233,7 +233,7 @@ public class JDCityPicker {
         utils.setBackgroundAlpha(context, 0.5f);
         updateIndicator();
         updateTabsStyle(INDEX_INVALID);
-        setProvinceListData();
+//        setProvinceListData();
 
     }
 
