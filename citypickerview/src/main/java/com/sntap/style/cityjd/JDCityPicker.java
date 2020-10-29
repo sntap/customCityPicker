@@ -233,7 +233,7 @@ public class JDCityPicker {
         utils.setBackgroundAlpha(context, 0.5f);
         updateIndicator();
         updateTabsStyle(INDEX_INVALID);
-//        setProvinceListData();
+        setProvinceListData();
 
     }
 
@@ -289,12 +289,9 @@ public class JDCityPicker {
         if(this.provinceList==null) {
             provinceList = parseHelper.getProvinceBeanArrayList();
         }
-        if (provinceList != null && !provinceList.isEmpty()) {
+        else if(provinceList != null && !provinceList.isEmpty()) {
             mProvinceAdapter = new ProvinceAdapter(context, provinceList);
             mCityListView.setAdapter(mProvinceAdapter);
-        } else {
-            ToastUtils.showLongToast(context, "解析本地城市数据失败！");
-            return;
         }
     }
 
